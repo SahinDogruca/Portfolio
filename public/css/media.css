@@ -80,7 +80,7 @@
   }
 
   #projects .col-md-8 {
-    height: 0;
+    height: 50% !important;
   }
 
   .card-title {
