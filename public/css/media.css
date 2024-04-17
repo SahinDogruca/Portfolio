@@ -69,7 +69,7 @@
   }
 
   #projects .col-md-4 {
-    height: 50% !important;
+    height: 300px !important;
     width: 100% !important;
   }
 
@@ -80,7 +80,7 @@
   }
 
   #projects .col-md-8 {
-    height: 50% !important;
+    flex: 1;
   }
 
   .card-title {
