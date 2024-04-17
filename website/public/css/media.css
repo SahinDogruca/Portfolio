@@ -9,12 +9,8 @@
 }
 
 @media (max-width: 992px) {
-  #main .container {
-    width: 50% !important;
-  }
-
   #main .main-container {
-    width: 50% !important;
+    width: 60% !important;
   }
 
   main .col-xl {
@@ -49,10 +45,6 @@
 @media (max-width: 768px) {
   .aboutme {
     width: 100% !important;
-  }
-
-  #main .main-container {
-    width: 60% !important;
   }
 
   .info-row {
