@@ -21,7 +21,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="./css/swiper-bundle.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -83,8 +86,8 @@
           <div class="col-lg-6 col-xl">
             <div class="image-wrap">
               <img
-                src="../img/WhatsApp Image 2024-04-10 at 21.19.15.jpeg"
-                alt=""
+                src="./img/profile.jpeg"
+                alt="Şahin Doğruca"
               />
             </div>
           </div>
@@ -124,14 +127,14 @@
           </div>
         </div>
         <div class="row info-row flex-md-row flex-column">
-          <div class="col-lg-4 col-md-6 col">
+          <div class="col-lg-4 col-md-6 col" style="flex: 2">
             <p>sahindogruca04@gmail.com</p>
           </div>
-          <div class="col-lg-4 col-md-6 col">
+          <div class="col-lg-4 col-md-6 col" style="flex: 1">
             <p>0545 975 3695</p>
           </div>
           <div class="col-lg-4 col">
-            <a class="btn" href="../img/resume.pdf" target="_blank">
+            <a class="btn" href="./img/resume.pdf">
               Download CV <i class="fa-solid fa-download"></i>
             </a>
           </div>
@@ -147,11 +150,63 @@
           projects for educational or training purposes
         </p>
         <div class="projects">
+          <div class="card featured">
+            <div class="row g-0 flex-column flex-md-row">
+              <div class="col-md-4">
+                <img
+                  src="./img/lesion_detection.png"
+                  class="img-fluid rounded-start"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">🦷 Lesion Detection in Panoramic Radiographs</h5>
+                  <p class="card-text">
+                    An AI-powered diagnostic system for detecting lesions in dental panoramic X-rays.
+                    Built with deep learning models (RT-DETR) for real-time object detection.
+                    Features include custom model upload, confidence threshold adjustment, and
+                    visual bounding box annotations.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Python, PyTorch, React, FastAPI, Docker</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card featured">
+            <div class="row g-0 flex-column flex-md-row">
+              <div class="col-md-4">
+                <img
+                  src="./img/clubs_platform.png"
+                  class="img-fluid rounded-start"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">🎓 Student Clubs Platform</h5>
+                  <p class="card-text">
+                    A comprehensive platform for managing university student clubs.
+                    Features club management, event scheduling, member registration,
+                    and admin dashboard. Supports multiple user roles including
+                    club admins, SKS admins, and operations admins.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >React, TypeScript, Node.js, PostgreSQL</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card">
             <div class="row g-0 flex-column flex-md-row">
               <div class="col-md-4">
                 <img
-                  src="../img/lessonTracker.png"
+                  src="./img/lessonTracker.png"
                   class="img-fluid rounded-start"
                 />
               </div>
@@ -174,10 +229,10 @@
           </div>
           <div class="card">
             <div class="row g-0 flex-column flex-md-row">
-              <div class="col-md-4">
+              <div class="col-md-4 project-img-wrap">
                 <img
-                  src="../img/hospitalAutomation.png"
-                  class="img-fluid rounded-start"
+                  src="./img/hospitalAutomation.png"
+                  class="img-fluid rounded-start project-img"
                 />
               </div>
               <div class="col-md-8">
@@ -200,7 +255,7 @@
             <div class="row g-0 flex-column flex-md-row">
               <div class="col-md-4">
                 <img
-                  src="../img/eCommerce.png"
+                  src="./img/eCommerce.png"
                   class="img-fluid rounded-start"
                 />
               </div>
@@ -225,7 +280,7 @@
             <div class="row g-0 flex-column flex-md-row">
               <div class="col-md-4">
                 <img
-                  src="../img/extraegitim.png"
+                  src="./img/extraegitim.png"
                   class="img-fluid rounded-start"
                 />
               </div>
@@ -242,6 +297,62 @@
                   <p class="card-text">
                     <small class="text-body-secondary"
                       >Javascript, Django, jQuery</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row g-0 flex-column flex-md-row">
+              <div class="col-md-4">
+                <img
+                  src="./img/ecommerce_next.png"
+                  class="img-fluid rounded-start"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">E-Commerce Using Next</h5>
+                  <p class="card-text">
+                    I developed the frontend of an e-commerce web application
+                    using the Next.js framework. For the backend, I utilized
+                    Sanity CMS. The deployment was carried out on the Vercel
+                    platform. The design was implemented with the Bootstrap
+                    framework. Additionally, the Stripe API was used for payment
+                    processing.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Next, Stripe, Sanity</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row g-0 flex-column flex-md-row">
+              <div class="col-md-4">
+                <img
+                  src="./img/hospital.png"
+                  class="img-fluid rounded-start"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Hospital System Using Next</h5>
+                  <p class="card-text">
+                    I developed fullstack hospital management system using
+                    Next.js, Spring Boot, and MySQL. Our team of five developed
+                    this project as part of a class assignment. Collaborating on
+                    this project significantly enhanced our skills in various
+                    areas, including feasibility analysis, project management,
+                    and effective communication
+                  </p>
+                  <p class="card-text">
+                    <small class="text-body-secondary"
+                      >Next, Spring Boot, MySQL</small
                     >
                   </p>
                 </div>
@@ -267,7 +378,7 @@
               <div class="swiper-slide">
                 <div class="card">
                   <img
-                    src="../img/Algoritma_Programlama_ve_Veri_YapC4B1larC4B1na_GiriC59F_Sertifika_page-0001.jpg"
+                    src="./img/Algoritma_Programlama_ve_Veri_YapC4B1larC4B1na_GiriC59F_Sertifika_page-0001.jpg"
                     class="card-img-top"
                   />
                   <div class="card-body">
@@ -278,7 +389,7 @@
               <div class="swiper-slide">
                 <div class="card">
                   <img
-                    src="../img/C4B0leri_Seviye_Java_Sertifika_page-0001.jpg"
+                    src="./img/C4B0leri_Seviye_Java_Sertifika_page-0001.jpg"
                     class="card-img-top"
                   />
                   <div class="card-body">
@@ -289,7 +400,7 @@
               <div class="swiper-slide">
                 <div class="card">
                   <img
-                    src="../img/Google_Flutter_ile_Mobil_Uygulama_Sertifika_page-0001.jpg"
+                    src="./img/Google_Flutter_ile_Mobil_Uygulama_Sertifika_page-0001.jpg"
                     class="card-img-top"
                   />
                   <div class="card-body">
@@ -300,7 +411,7 @@
               <div class="swiper-slide">
                 <div class="card">
                   <img
-                    src="../img/JAVASCRIPT_Sertifika_page-0001.jpg"
+                    src="./img/JAVASCRIPT_Sertifika_page-0001.jpg"
                     class="card-img-top"
                   />
                   <div class="card-body">
@@ -311,7 +422,7 @@
               <div class="swiper-slide">
                 <div class="card">
                   <img
-                    src="../img/Projeler_ile_jQuery_Sertifika_page-0001.jpg"
+                    src="./img/Projeler_ile_jQuery_Sertifika_page-0001.jpg"
                     class="card-img-top"
                   />
                   <div class="card-body">
@@ -351,10 +462,7 @@
           <li class="list-group-item">
             Data types and structures in C/C++ from Abdul Bari
           </li>
-          <li class="list-group-item">HTML, CSS, SCSS, docker, bootstrap</li>
-          <li class="list-group-item">
-            Javascript, jQuery, Flutter (basic) from BTK akademi
-          </li>
+          <li class="list-group-item">React, Next.js, Bootstrap, Tailwind</li>
           <li class="list-group-item">
             Numpy, Pandas, Matplotlib, ScikitLearn and Dask
           </li>
@@ -396,104 +504,132 @@
     <section id="skills">
       <div class="container">
         <h2 class="title text-center">Skills</h2>
-        <p class="lead text-center">
-          The skills I have acquired through my training and projects
+        <p class="lead text-center mb-4">
+          Technologies I use to bring ideas to life
         </p>
-        <div class="skills">
-          <div class="skill">
-            <h3>CSS</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 80%"></div>
+        <div class="skills-marquee">
+          <div class="marquee-track">
+            <!-- First set of logos -->
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+              <span>Python</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Javascript</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 65%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+              <span>JavaScript</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Python</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 80%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+              <span>TypeScript</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Django</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+              <span>Java</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Java</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+              <span>React</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Spring Boot</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 60%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+              <span>Next.js</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Flutter</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 50%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+              <span>Django</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>SQL</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
+              <span>Spring</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Git</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 80%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+              <span>PyTorch</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Bootstrap</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+              <span>Docker</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>SCSS</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+              <span>PostgreSQL</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>ML</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 50%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+              <span>MySQL</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Algorithms</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 70%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+              <span>Git</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>English</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 65%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+              <span>NumPy</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Numpy</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 75%"></div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+              <span>Pandas</span>
             </div>
-          </div>
-          <div class="skill">
-            <h3>Pandas</h3>
-            <div class="progress">
-              <div class="progress-bar" style="width: 75%"></div>
+            <!-- Duplicate set for seamless loop -->
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+              <span>Python</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+              <span>TypeScript</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+              <span>Java</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+              <span>React</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+              <span>Next.js</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+              <span>Django</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
+              <span>Spring</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+              <span>PyTorch</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+              <span>Docker</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+              <span>MySQL</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+              <span>Git</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+              <span>NumPy</span>
+            </div>
+            <div class="tech-logo">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+              <span>Pandas</span>
             </div>
           </div>
         </div>
@@ -553,8 +689,9 @@
       </div>
     </footer>
 
-    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./css/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>

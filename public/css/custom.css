@@ -149,42 +149,116 @@ main .main-container .info-row div:last-child {
   margin: 0 auto;
 }
 
-#skills .skills {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  margin-top: 2rem;
-}
-#skills .skills .skill {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #F9FAF5;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-#skills .skills .skill h3 {
-  font-size: 1.5rem;
-  color: #2A2E2F;
-  margin: auto 0;
-}
-#skills .skills .skill .progress {
-  width: 60%;
-  height: 20px;
-  background-color: #F3F4EF;
-  border-radius: 10px;
-  position: relative;
+#skills .skills-marquee {
   overflow: hidden;
+  background: linear-gradient(135deg, #F9FAF5 0%, #F3F4EF 100%);
+  border-radius: 20px;
+  padding: 2rem 0;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
-#skills .skills .skill .progress .progress-bar {
-  width: 80%;
-  height: 100%;
-  background-color: #C3A27A;
-  border-radius: 10px;
+
+#skills .skills-marquee::before,
+#skills .skills-marquee::after {
+  content: '';
   position: absolute;
   top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#skills .skills-marquee::before {
   left: 0;
+  background: linear-gradient(to right, #F9FAF5, transparent);
+}
+
+#skills .skills-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #F3F4EF, transparent);
+}
+
+#skills .marquee-track {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+#skills .marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#skills .tech-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+#skills .tech-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+#skills .tech-logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+#skills .tech-logo:hover img {
+  transform: scale(1.15);
+}
+
+#skills .tech-logo span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #2A2E2F;
+  white-space: nowrap;
+}
+
+/* Featured project card styling */
+#projects .card.featured {
+  background: linear-gradient(135deg, #1D639D 0%, #2980b9 100%);
+  border: none;
+  box-shadow: 0 8px 32px rgba(29, 99, 157, 0.3);
+}
+
+#projects .card.featured .card-body {
+  color: #fff;
+}
+
+#projects .card.featured .card-title {
+  color: #fff;
+}
+
+#projects .card.featured .card-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#projects .card.featured .text-body-secondary {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .aboutme {
